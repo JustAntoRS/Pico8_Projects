@@ -5,15 +5,15 @@ __lua__
 @justantors]]
 --version 1.0.6
 
+--open cart data
+cartdata("pong_justantors")
+
 function _init()
 	t=0 --time in frames
 	s=0	--time in seconds (30t=1s)
 	p_win=11 --points to win(2p)
 	new_highscore=false --1p var
 	col_over=8 --game over highscore color (1p)
-
-	--open cart data
-	cartdata("1p")
 
 	--play area limits
 	area={x1=5,y1=20,x2=123,y2=127}
@@ -212,22 +212,6 @@ function start_menu()
 	--update basic functions
 	_update = update_menu
 	_draw = draw_menu
-
-	--restart pad position
-	p1.x=40
-	p1.y=94
-	p2.x=83
-	p2.y=94
-
-	--restart pad score
-	p1.p=0
-	p2.p=0
-
-	--restart global variables
-	s=0
-	t=0
-	new_highscore=false
-	p2.playable=true
 end
 
 function start_selection()
@@ -481,7 +465,7 @@ function update_over()
 
 	--restart
 	if btnp(5) then
-		start_menu()
+		init()
 	end
 
 end
@@ -591,4 +575,3 @@ __sfx__
 011000003005000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 __music__
 03 02424344
-
