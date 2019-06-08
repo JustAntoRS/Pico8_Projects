@@ -1,7 +1,8 @@
 # CloudGame
 ## Images
-![MainMenu](https://imgur.com/VBMjcE6)
-![Game](https://imgur.com/0ztHh8Q)
+
+![MainMenu](https://imgur.com/VBMjcE6.gif)
+![Game](https://imgur.com/0ztHh8Q.gif)
 
 ## Description
 A Simple Memory game made with PICO-8
