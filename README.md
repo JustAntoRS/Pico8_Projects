@@ -7,6 +7,8 @@
 ## Description
 This is PONG game that you can play alone or with a friend created with [PICO-8](https://www.lexaloffle.com/pico-8.php)
 
+You can play it here at [Itch.io](https://justantors.itch.io/arcade-pong)
+
 ## Features
 * 2 Players versus mode.
   * Change the required points to win.
